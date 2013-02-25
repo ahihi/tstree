@@ -54,8 +54,9 @@ The function lookup returns the value associated with a key sequence in a TSTree
 
 1. If the first element of the key sequence is less or greater than the key of this node, a lookup with the same key sequence is performed on the left or right child node, respectively.
 2. Otherwise, the first element of the key sequence is equal to the key of this node. This situation has two sub-cases:
-    2.1. If the tail (all elements but the first) of the key sequence is empty, the end of the sequence has been reached. The value associated with this node is returned, if one exists.
-    2.2. If the tail of the key sequence is non-empty, a lookup with the tail is performed on the middle child node.
+
+* If the tail (all elements but the first) of the key sequence is empty, the end of the sequence has been reached. The value associated with this node is returned, if one exists.
+* If the tail of the key sequence is non-empty, a lookup with the tail is performed on the middle child node.
 
 >   lookup :: (Ord k) => [k] -> TSTree k v -> Maybe v
 >   lookup _      Empty                = Nothing
