@@ -1,7 +1,7 @@
 Ternary search trees
 
 > module TSTree where
-
+> 
 > import Prelude hiding (lookup)
 > import Data.Function (on)
 > import qualified Data.Map as M
