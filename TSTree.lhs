@@ -1,6 +1,6 @@
 Ternary search trees
 
-> module TSTree where
+> module TSTree (TSTree (..), assocs, empty, insert, lookup) where
 > 
 > import Prelude hiding (lookup)
 > import Data.Function (on)
